@@ -1,0 +1,43 @@
+html, body { 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+}
+#map { 
+    height: 100%; 
+    width: 100%; 
+}
+#formContainer {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: white;
+    padding: 10px;
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#formContainer input, #formContainer button {
+    display: block;
+    margin-bottom: 10px;
+}
+.drink {
+    position: relative;
+}
+.removeDrink {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: red;
+    font-weight: bold;
+    font-size: 14px;
+}
+#searchContainer {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: white;
+    padding: 10px;
+    z-index: 5;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自動販売機アプリ</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCw0YG_D11GBskarnZPmndMY3IF3T5uEOM&language=ja"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="map"></div>
+    <div id="formContainer">
+        <h3>自動販売機情報登録</h3>
+        <label>自動販売機の名前</label>
+        <input type="text" id="machineName">
+        <label>緯度</label>
+        <input type="text" id="lat" style="display: none;">
+        <label>経度</label>
+        <input type="text" id="lng" style="display: none;">
+        <h4>飲み物の情報</h4>
+        <div id="drinksContainer">
+            <div class="drink">
+                <label>飲み物の名前</label>
+                <input type="text" class="drinkName">
+                <label>価格</label>
+                <input type="text" class="drinkPrice">
+                <span class="removeDrink" onclick="removeDrink(this)">×</span>
+            </div>
+        </div>
+        <button type="button" id="addDrink">飲み物を追加</button>
+        <button type="button" id="saveMachine">登録</button>
+    </div>
+    
+    <div id="searchContainer">
+        <h3>飲み物で検索</h3>
+        <label>飲み物の名前</label>
+        <input type="text" id="searchDrinkName">
+        <button type="button" id="searchButton">検索</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
